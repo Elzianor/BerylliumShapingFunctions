@@ -1,1 +1,2 @@
 # ShapingFunctions
+Various shaping functions.
