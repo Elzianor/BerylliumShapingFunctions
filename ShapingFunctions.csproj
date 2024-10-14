@@ -10,4 +10,24 @@
     <PackageReference Include="BerylliumMath" Version="0.0.2" />
   </ItemGroup>
 
+  <PropertyGroup>
+    <PackageId>BerylliumShapingFunctions</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Vladyslav Pysarenko</Authors>
+    <Company>Beryllium Co.</Company>
+    <Description>Various shaping functions.</Description>
+    <Copyright>Copyright © Beryllium Co. 2024</Copyright>
+    <PackageTags>Beryllium;Shaping;Functions;Shaping functions</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/Elzianor/BerylliumShapingFunctions</RepositoryUrl>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
+
 </Project>
