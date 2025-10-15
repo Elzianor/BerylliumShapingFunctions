@@ -1,8 +1,8 @@
 ﻿namespace Beryllium.ShapingFunctions;
 
-public class QuadraticThroughAGivenPoint : ParametricQuadraticBase
+public class QuadraticThroughAGivenPoint : ParametricQuadraticBase, ITwoParameters
 {
-    #region Customizables
+    #region Parameters
     private float _a;
     public float A
     {

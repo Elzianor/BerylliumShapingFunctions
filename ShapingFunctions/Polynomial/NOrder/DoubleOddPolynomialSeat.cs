@@ -1,8 +1,8 @@
 ﻿namespace Beryllium.ShapingFunctions;
 
-public class DoubleOddPolynomialSeat : ParametricNOrderBase
+public class DoubleOddPolynomialSeat : ParametricNOrderBase, ITwoParameters, INOrder
 {
-    #region Customizables
+    #region Parameters
     private float _a;
     public float A
     {
@@ -16,7 +16,9 @@ public class DoubleOddPolynomialSeat : ParametricNOrderBase
         get => _b;
         set => _b = Math.Clamp(value, 0.0f, 1.0f);
     }
+    #endregion
 
+    #region Order
     // good working range is 1 to ~20
     public int N { get; set; }
     #endregion

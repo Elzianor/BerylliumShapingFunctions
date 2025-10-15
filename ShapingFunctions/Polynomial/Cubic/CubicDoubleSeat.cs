@@ -1,8 +1,8 @@
 ﻿namespace Beryllium.ShapingFunctions;
 
-public class CubicDoubleSeat : ParametricCubicBase
+public class CubicDoubleSeat : ParametricCubicBase, ITwoParameters
 {
-    #region Customizables
+    #region Parameters
     private float _a;
     public float A
     {

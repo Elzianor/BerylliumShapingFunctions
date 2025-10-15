@@ -1,8 +1,8 @@
 ﻿namespace Beryllium.ShapingFunctions;
 
-public class EllipticalDoubleSigmoid : ParametricTranscendentalBase
+public class EllipticalDoubleSigmoid : ParametricTranscendentalBase, ITwoParameters
 {
-    #region Customizables
+    #region Parameters
     private float _a;
     public float A
     {

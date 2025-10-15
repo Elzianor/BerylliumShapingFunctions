@@ -1,8 +1,8 @@
 ﻿namespace Beryllium.ShapingFunctions;
 
-public class ExponentialDoubleSeat : ParametricTranscendentalBase
+public class ExponentialDoubleSeat : ParametricTranscendentalBase, IOneParameter
 {
-    #region Customizables
+    #region Parameters
     private float _a;
     public float A
     {

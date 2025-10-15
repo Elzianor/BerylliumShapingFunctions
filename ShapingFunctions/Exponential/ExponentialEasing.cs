@@ -1,8 +1,8 @@
 ﻿namespace Beryllium.ShapingFunctions;
 
-public class ExponentialEasing : ParametricTranscendentalBase
+public class ExponentialEasing : ParametricTranscendentalBase, IOneParameter
 {
-    #region Customizables
+    #region Parameters
     private float _a;
     public float A
     {

@@ -1,8 +1,8 @@
 ﻿namespace Beryllium.ShapingFunctions;
 
-public class LogisticSigmoid : ParametricTranscendentalBase
+public class LogisticSigmoid : ParametricTranscendentalBase, IOneParameter
 {
-    #region Customizables
+    #region Parameters
     private float _a;
     public float A
     {

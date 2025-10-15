@@ -1,8 +1,8 @@
 ﻿namespace Beryllium.ShapingFunctions;
 
-public class DoublePolynomialSigmoid : ParametricNOrderBase
+public class DoublePolynomialSigmoid : ParametricNOrderBase, ITwoParameters, INOrder
 {
-    #region Customizables
+    #region Paremeters
     private float _a;
     public float A
     {
@@ -16,7 +16,9 @@ public class DoublePolynomialSigmoid : ParametricNOrderBase
         get => _b;
         set => _b = Math.Clamp(value, 0.0f, 1.0f);
     }
+    #endregion
 
+    #region Order
     // good working range is 1 to ~10
     public int N { get; set; }
     #endregion

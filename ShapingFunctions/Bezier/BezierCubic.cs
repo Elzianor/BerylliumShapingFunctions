@@ -1,8 +1,8 @@
 ﻿namespace Beryllium.ShapingFunctions;
 
-public class BezierCubic : ParametricCubicBase
+public class BezierCubic : ParametricCubicBase, IFourParameters
 {
-    #region Customizables
+    #region Parameters
     private float _a;
     public float A
     {
