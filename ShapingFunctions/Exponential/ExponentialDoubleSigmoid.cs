@@ -1,6 +1,6 @@
 ﻿namespace Beryllium.ShapingFunctions;
 
-public class ExponentialEasing : ParametricTranscendentalBase
+public class ExponentialDoubleSigmoid : ParametricTranscendentalBase
 {
     #region Customizables
     private float _a;
@@ -11,9 +11,9 @@ public class ExponentialEasing : ParametricTranscendentalBase
     }
     #endregion
 
-    public ExponentialEasing()
+    public ExponentialDoubleSigmoid()
     {
-        Name = "Exponential Easing";
+        Name = "Exponential Double Sigmoid";
     }
 
     public override float CalculateOutput(float input)
@@ -23,18 +23,10 @@ public class ExponentialEasing : ParametricTranscendentalBase
         const float maxParamA = 1.0f - epsilon;
 
         A = Math.Min(maxParamA, Math.Max(minParamA, A));
+        A = 1.0f - A; // for sensible results
 
-        if (A < 0.5)
-        {
-            // emphasis
-            A = 2.0f * A;
-
-            return (float)Math.Pow(input, A);
-        }
-
-        // de-emphasis
-        A = 2.0f * (A - 0.5f);
-
-        return (float)Math.Pow(input, 1.0f / (1.0f - A));
+        return input <= 0.5f ?
+            (float)Math.Pow(2.0f * input, 1.0f / A) / 2.0f :
+            1.0f - (float)Math.Pow(2.0f * (1.0f - input), 1.0f / A) / 2.0f;
     }
 }
