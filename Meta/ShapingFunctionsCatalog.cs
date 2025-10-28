@@ -44,6 +44,11 @@ public static class ShapingFunctionsCatalog
         Catalog.Add(ShapingFunctionTypes.Sine, CreateFunctionsList(ShapingFunctionTypes.Sine));
     }
 
+    public static ICollection<ShapingFunctionTypes> GetAvailableFunctionTypes()
+    {
+        return Catalog.Keys;
+    }
+
     public static List<ShapingFunctions> GetFunctionsOfType(ShapingFunctionTypes type)
     {
         return Catalog.GetValueOrDefault(type);
