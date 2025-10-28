@@ -7,7 +7,7 @@
 
     <PropertyGroup>
         <PackageId>BerylliumShapingFunctions</PackageId>
-        <Version>1.0.5</Version>
+        <Version>1.0.6</Version>
         <Authors>Vladyslav Pysarenko</Authors>
         <Company>Beryllium Co.</Company>
         <Description>Various shaping functions.</Description>
