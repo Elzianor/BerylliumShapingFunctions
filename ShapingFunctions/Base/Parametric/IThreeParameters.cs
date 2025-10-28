@@ -1,8 +1,6 @@
 ﻿namespace Beryllium.ShapingFunctions;
 
-public interface IThreeParameters
+public interface IThreeParameters : ITwoParameters
 {
-    public float A { get; set; }
-    public float B { get; set; }
     public float C { get; set; }
 }
