@@ -97,11 +97,9 @@ public static class ShapingFunctionsCatalog
             ShapingFunctionTypes.Exponential =>
             [
                 ShapingFunctions.ExponentialDoubleSeat,
-                ShapingFunctions.ExponentialDoubleSigmoid,
                 ShapingFunctions.ExponentialEaseIn,
                 ShapingFunctions.ExponentialEaseInOut,
-                ShapingFunctions.ExponentialEaseOut,
-                ShapingFunctions.ExponentialEasing
+                ShapingFunctions.ExponentialEaseOut
             ],
             ShapingFunctionTypes.Linear => [ShapingFunctions.Linear],
             ShapingFunctionTypes.Quadratic =>
@@ -114,7 +112,6 @@ public static class ShapingFunctionsCatalog
             ShapingFunctionTypes.Cubic =>
             [
                 ShapingFunctions.CubicDoubleSeat,
-                ShapingFunctions.CubicDoubleSeatWithLinearBlend,
                 ShapingFunctions.CubicEaseIn,
                 ShapingFunctions.CubicEaseInOut,
                 ShapingFunctions.CubicEaseOut
