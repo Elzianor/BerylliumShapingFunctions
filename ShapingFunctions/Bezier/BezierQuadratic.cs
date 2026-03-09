@@ -29,7 +29,7 @@ public class BezierQuadratic : ParametricQuadraticBase, ITwoParameters
         A = Math.Max(0.0f, Math.Min(1.0f, A));
         B = Math.Max(0.0f, Math.Min(1.0f, B));
 
-        if (BMath.IsEqual(A, 0.5f)) A += epsilon;
+        if (BMath.AreEqual(A, 0.5f)) A += epsilon;
 
         // solve t from x (an inverse operation)
         var om2a = 1.0f - 2.0f * A;

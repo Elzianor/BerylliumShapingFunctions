@@ -1,13 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
+        <TargetFramework>net10.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
 
     <PropertyGroup>
         <PackageId>BerylliumShapingFunctions</PackageId>
-        <Version>1.0.8</Version>
+        <Version>1.0.9</Version>
         <Authors>Vladyslav Pysarenko</Authors>
         <Company>Beryllium Co.</Company>
         <Description>Various shaping functions.</Description>
@@ -18,7 +18,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="BerylliumMath" Version="0.0.4"/>
+        <PackageReference Include="BerylliumMath" Version="0.0.6"/>
     </ItemGroup>
 
     <PropertyGroup>

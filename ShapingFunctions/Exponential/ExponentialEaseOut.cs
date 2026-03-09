@@ -9,7 +9,7 @@ public class ExponentialEaseOut : TranscendentalBase
 
     public override float CalculateOutput(float input)
     {
-        return BMath.IsEqual(input, 1.0f) ?
+        return BMath.AreEqual(input, 1.0f) ?
             1.0f :
             1.0f - (float)Math.Pow(2, -10 * input);
     }
